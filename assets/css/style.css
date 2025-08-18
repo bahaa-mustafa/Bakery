@@ -6,7 +6,6 @@
 
 html {
     scroll-behavior: smooth;
-
 }
 
 
@@ -25,22 +24,17 @@ html {
 }
 
 
-/* .bg-style {
-    position: fixed;
+.bg-style {
+    position: fixed !important;
     top: 0;
+    left: 0;
     width: 100%;
-    padding: .9375rem 0;
-    background-color: transparent;
-    transition: background-color 0.3s ease;
-    color: #fff;
+    background-color: transparent !important;
     z-index: 999;
-} */
-
-/* .bg-style:scrolled {
-    background-color: white;
-    color: black;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-} */
+}
+.text_nav{
+    color: #fff !important;
+}
 
 .home_img {
     background-image: url("../imgs/Banner.jpg");
