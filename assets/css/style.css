@@ -32,7 +32,8 @@ html {
     background-color: transparent !important;
     z-index: 999;
 }
-.text_nav{
+
+.text_nav {
     color: #fff !important;
 }
 
@@ -55,6 +56,15 @@ html {
     border-radius: 50%;
     margin-right: 18px;
     object-fit: cover;
+    position: absolute;
+    top: 40%;
+    right: 45%;
+}
+
+@media (max-width:576px) {
+.avatar{
+    right: 32%;
+}    
 }
 
 .carousel-item {
