@@ -62,9 +62,9 @@ html {
 }
 
 @media (max-width:576px) {
-.avatar{
-    right: 32%;
-}    
+    .avatar {
+        right: 32%;
+    }
 }
 
 .carousel-item {
@@ -86,4 +86,57 @@ html {
     height: 10px;
     width: 10px;
     border-radius: 50%;
+}
+
+
+
+@media (max-width:576px) {
+    .navbar-collapse {
+        position: relative;
+    }
+
+
+    .links {
+        display: flex !important;
+        flex-direction: column-reverse !important;
+        background-color: #05a555 !important;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+    }
+
+    #menu-btn:checked~.links {
+        max-height: 400px !important;
+        padding: 20px;
+        font-weight: 600;
+    }
+
+
+    .open-icon {
+        display: inline-block;
+    }
+
+    .close-icon {
+        display: none !important;
+    }
+
+    #menu-btn:checked~label .open-icon {
+        display: none;
+    }
+
+    #menu-btn:checked~label .close-icon {
+        display: inline-block !important;
+        background-color: #ffc107;
+        padding: 5px;
+        border-radius: 50%;
+    }
+    .list-btn{
+        position: absolute;
+        z-index: 9999;
+        right: 0;
+    }
 }
